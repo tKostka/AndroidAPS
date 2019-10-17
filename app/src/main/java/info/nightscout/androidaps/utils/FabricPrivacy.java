@@ -12,6 +12,7 @@ import info.nightscout.androidaps.BuildConfig;
 import info.nightscout.androidaps.MainApp;
 import info.nightscout.androidaps.logging.L;
 import info.nightscout.androidaps.plugins.configBuilder.ConfigBuilderPlugin;
+import info.nightscout.androidaps.plugins.constraints.signatureVerifier.SignatureVerifier;
 
 /**
  * Created by jamorham on 21/02/2018.
@@ -112,7 +113,7 @@ public class FabricPrivacy {
 
         String closedLoopEnabled = MainApp.getConstraintChecker().isClosedLoopAllowed().value() ? "CLOSED_LOOP_ENABLED" : "CLOSED_LOOP_DISABLED";
         // Size is limited to 36 chars
-        String remote = BuildConfig.REMOTE
+        String remote = BuildConfig.REMOTE.toLowerCase()
                 .replace("https://","")
                 .replace("http://","")
                 .replace(".git", "")
@@ -137,7 +138,7 @@ public class FabricPrivacy {
             MainApp.getFirebaseAnalytics().setUserProperty("Sensitivity", ConfigBuilderPlugin.getPlugin().getActiveSensitivity().getClass().getSimpleName());
         if (ConfigBuilderPlugin.getPlugin().getActiveInsulin() != null)
             MainApp.getFirebaseAnalytics().setUserProperty("Insulin", ConfigBuilderPlugin.getPlugin().getActiveInsulin().getClass().getSimpleName());
-
+        SignatureVerifier.getPlugin().signatureHashes();
     }
 
 }

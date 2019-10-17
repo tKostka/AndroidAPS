@@ -1,4 +1,4 @@
-package info.nightscout.androidaps.plugins.general.signatureVerifier;
+package info.nightscout.androidaps.plugins.constraints.signatureVerifier;
 
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
@@ -124,12 +124,39 @@ public class SignatureVerifier extends PluginBase implements ConstraintsInterfac
                     }
                 }
             }
-        } catch (PackageManager.NameNotFoundException e) {
-            log.error("Error in SignatureVerifier", e);
-        } catch (NoSuchAlgorithmException e) {
+        } catch (PackageManager.NameNotFoundException | NoSuchAlgorithmException e) {
             log.error("Error in SignatureVerifier", e);
         }
         return false;
+    }
+
+    public List<String> signatureHashes() {
+        List<String> hashes = new ArrayList<>();
+        try {
+            Signature[] signatures = MainApp.instance().getPackageManager().getPackageInfo(MainApp.instance().getPackageName(), PackageManager.GET_SIGNATURES).signatures;
+            if (signatures != null) {
+                for (Signature signature : signatures) {
+                    MessageDigest digest = MessageDigest.getInstance("SHA256");
+                    byte[] fingerprint = digest.digest(signature.toByteArray());
+                    String hash = Hex.toHexString(fingerprint);
+                    log.debug("Found signature: " + hash);
+                    log.debug("Found signature (unicode): " + unicodeMap(fingerprint));
+                    log.debug("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"§$%&/()=?,.-;:_<>|°^`´\\@€*'#+~{}[]¿¡áéíóúàèìòùöäü`ÁÉÍÓÚÀÈÌÒÙÖÄÜßÆÇÊËÎÏÔŒÛŸæçêëîïôœûÿĆČĐŠŽćđšžñΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ\u03A2ΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρςστυφχψωϨϩϪϫϬϭϮϯϰϱϲϳϴϵ϶ϷϸϹϺϻϼϽϾϿЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗ");
+                    hashes.add(hash);
+                 }
+            }
+        } catch (PackageManager.NameNotFoundException | NoSuchAlgorithmException e) {
+            log.error("Error in SignatureVerifier", e);
+        }
+        return hashes;
+    }
+
+    private String unicodeMap(byte[] array) {
+        StringBuilder sb = new StringBuilder();
+        for (byte b : array) {
+            sb.append((char) (b & 0xFF + 0x22));
+        }
+        return sb.toString();
     }
 
     private boolean shouldDownloadCerts() {
