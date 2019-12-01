@@ -1378,4 +1378,8 @@
     <string name="format_carbs">%1$dg</string>
     <string name="common_on">Włącz</string>
     <string name="common_off">Wyłącz</string>
+    <string name="objectives_button_unfinish">Wyczyść skończone</string>
+    <string name="objectives_button_unstart">Wyczyść rozpoczęte</string>
+    <string name="timedetection">Wykrywanie czasu</string>
+    <string name="doyouwantresetstart">Czy chcesz zresetować czas rozpoczęcia zadania? Możesz utracić postępy.</string>
 </resources>
