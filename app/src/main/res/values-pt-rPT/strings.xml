@@ -328,6 +328,7 @@
     <string name="smscommunicator_suspendreplywithcode">Para suspender o loop por %1$d minutos resposta com código %2$s</string>
     <string name="smscommunicator_tempbasalset">Basal temporária %1$.2fU/h para %2$d min iniciada com êxito</string>
     <string name="smscommunicator_extendedset">Bólus estendido %1$.2fU/h para %2$d min iniciado com êxito</string>
+    <string name="smscommunicator_carbsfailed">Introdução de %1$dg de hidratos falhou</string>
     <string name="smscommunicator_tempbasalset_percent">Basal temporária %1$d% U/h durante%2$d min iniciada com êxito</string>
     <string name="smscommunicator_tempbasalfailed">Início basal temp falhou </string>
     <string name="smscommunicator_extendedfailed">Falha ao iniciar o bólus estendido</string>
