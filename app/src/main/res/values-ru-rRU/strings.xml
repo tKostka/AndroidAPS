@@ -1394,4 +1394,8 @@ Context | Edit Context</string>
     <string name="format_carbs">%1$d гр</string>
     <string name="common_on">Вкл.</string>
     <string name="common_off">Выкл.</string>
+    <string name="objectives_button_unfinish">Очистить завершенные</string>
+    <string name="objectives_button_unstart">Очистить начатые</string>
+    <string name="timedetection">Определение времени</string>
+    <string name="doyouwantresetstart">Хотите сбросить начатую цель? Можете потерять уже достигнутое.</string>
 </resources>
