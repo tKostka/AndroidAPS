@@ -361,10 +361,8 @@
     <string name="button1">Botón 1</string>
     <string name="button2">Botón 2</string>
     <string name="button3">Botón 3</string>
-    <string name="units">Unidades:</string>
     <string name="mgdl">mg/dl</string>
     <string name="mmol">mmol/l</string>
-    <string name="dia">DIA (Duración Insulina Activa):</string>
     <string name="target_range">Rango Objetivo:</string>
     <string name="prefs_range_title">Rango de visualización</string>
     <string name="prefs_range_summary">Marcas Alta y Baja para gráficos en pantalla Inicio y Smartwatch</string>
