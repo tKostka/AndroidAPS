@@ -376,10 +376,8 @@
     <string name="button1">Tlačítko 1</string>
     <string name="button2">Tlačítko 2</string>
     <string name="button3">Tlačítko 3</string>
-    <string name="units">Jednotky:</string>
     <string name="mgdl">mg/dL</string>
     <string name="mmol">mmol/L</string>
-    <string name="dia">DIA:</string>
     <string name="target_range">Cílový rozsah:</string>
     <string name="prefs_range_title">Rozsah pro zobrazení</string>
     <string name="prefs_range_summary">Značka vysoké a nízké hodnoty v přehledu a na hodinkách Wear</string>
