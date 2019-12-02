@@ -376,10 +376,8 @@
     <string name="button1">Tasto 1</string>
     <string name="button2">Tasto 2</string>
     <string name="button3">Tasto 3</string>
-    <string name="units">Unità:</string>
     <string name="mgdl">mg/dl</string>
     <string name="mmol">mmol/l</string>
-    <string name="dia">DIA:</string>
     <string name="target_range">Intervallo target:</string>
     <string name="prefs_range_title">Intervallo di visualizzazione</string>
     <string name="prefs_range_summary">Limite alto e basso per i grafici nella sezione Panoramica e sullo Smartwatch</string>
