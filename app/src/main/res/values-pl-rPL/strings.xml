@@ -361,10 +361,8 @@
     <string name="button1">Przycisk 1</string>
     <string name="button2">Przycisk 2</string>
     <string name="button3">Przycisk 3</string>
-    <string name="units">Jednostki:</string>
     <string name="mgdl">mg/dl</string>
     <string name="mmol">mmol/l</string>
-    <string name="dia">DIA:</string>
     <string name="target_range">Zakres docelowy:</string>
     <string name="prefs_range_title">Zakres do wizualizacji (na wykresie)</string>
     <string name="prefs_range_summary">Oznaczenia wysokiego i niskiego cukru na wykresie w oknie przegląd i na smartwatch\'u</string>
