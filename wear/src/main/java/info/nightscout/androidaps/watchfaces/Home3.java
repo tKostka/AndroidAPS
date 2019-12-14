@@ -97,9 +97,9 @@ public class Home3 extends BaseWatchFace {
         }
 
         if (batteryLevel == 1) {
-            mUploaderBattery.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_uploaderBattery));
+            mUploaderBattery.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
         } else {
-            mUploaderBattery.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_uploaderBatteryEmpty));
+            mUploaderBattery.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_lowColor));
         }
         mRigBattery.setTextColor(Color.WHITE);
         mDelta.setTextColor(Color.WHITE);
