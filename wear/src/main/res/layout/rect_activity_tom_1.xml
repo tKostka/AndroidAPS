@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context=".watchfaces.Home2" tools:deviceIds="wear_square"
+    android:layout_height="match_parent" tools:context=".watchfaces.tom1" tools:deviceIds="wear_square"
     android:background="@color/black"
     android:id="@+id/main_layout">
 
@@ -55,7 +55,7 @@
                     android:text="12:00"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
-                    android:textSize="32sp" />
+                    android:textSize="34sp" />
 
                 <LinearLayout
                     android:id="@+id/date_time"
@@ -243,7 +243,7 @@
                             android:textStyle="bold" />
 
                         <LinearLayout
-                            android:layout_width="5dp"
+                            android:layout_width="0px"
                             android:layout_height="match_parent"
                             android:layout_weight="0.1"
                             android:orientation="horizontal" />
@@ -315,28 +315,28 @@
                     android:orientation="vertical"
                     android:textAlignment="center">
 
-                <TextView
-                    android:id="@+id/cob_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="Carb"
-                    android:textColor="#FFFFFF"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/cob_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Carb"
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/cobView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="--g"
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/cobView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="--g"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -395,25 +395,25 @@
 
                 </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:orientation="horizontal" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/AAPSv2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:text=""
-                    android:visibility="gone" />
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal" />
 
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/AAPSv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text=""
+                android:visibility="gone" />
+
         </LinearLayout>
+
+    </LinearLayout>
 
 
 </RelativeLayout>

@@ -65,7 +65,7 @@ public class tom1 extends BaseWatchFace {
     }
 
     protected void setColorDark() {
-        mLinearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_statusView));
+        mLinearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_background));
         mLinearLayout2.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_background));
         mRelativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_background));
         mTime.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
@@ -101,11 +101,11 @@ public class tom1 extends BaseWatchFace {
         } else {
             mUploaderBattery.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_uploaderBatteryEmpty));
         }
-        mRigBattery.setTextColor(Color.BLACK);
-        mDelta.setTextColor(Color.BLACK);
-        mAvgDelta.setTextColor(Color.BLACK);
-        mBasalRate.setTextColor(Color.BLACK);
-        mBgi.setTextColor(Color.BLACK);
+        mRigBattery.setTextColor(Color.WHITE);
+        mDelta.setTextColor(Color.WHITE);
+        mAvgDelta.setTextColor(Color.WHITE);
+        mBasalRate.setTextColor(Color.WHITE);
+        mBgi.setTextColor(Color.WHITE);
 
         if (loopLevel == 1) {
             mLoop.setBackgroundResource(R.drawable.loop_green_25);
@@ -126,7 +126,7 @@ public class tom1 extends BaseWatchFace {
     }
 
     protected void setColorLowRes() {
-        mLinearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_statusView));
+        mLinearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_background));
         mLinearLayout2.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_background));
         mRelativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_background));
         mLoop.setBackgroundResource(R.drawable.loop_grey_25);
@@ -134,12 +134,12 @@ public class tom1 extends BaseWatchFace {
         mSgv.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
         mDirection.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
         mTimestamp.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_Timestamp));
-        mDelta.setTextColor(Color.BLACK);
-        mAvgDelta.setTextColor(Color.BLACK);
-        mRigBattery.setTextColor(Color.BLACK);
-        mUploaderBattery.setTextColor(Color.BLACK);
-        mBasalRate.setTextColor(Color.BLACK);
-        mBgi.setTextColor(Color.BLACK);
+        mDelta.setTextColor(Color.WHITE);
+        mAvgDelta.setTextColor(Color.WHITE);
+        mRigBattery.setTextColor(Color.WHITE);
+        mUploaderBattery.setTextColor(Color.WHITE);
+        mBasalRate.setTextColor(Color.WHITE);
+        mBgi.setTextColor(Color.WHITE);
         mIOB1.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
         mIOB2.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
         mCOB1.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
