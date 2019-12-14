@@ -311,7 +311,7 @@
                     android:text="12:00"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
-                    android:textSize="32sp" />
+                    android:textSize="34sp" />
 
                 <LinearLayout
                     android:id="@+id/date_time"
