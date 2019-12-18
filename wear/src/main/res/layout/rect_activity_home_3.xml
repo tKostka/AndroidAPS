@@ -220,13 +220,13 @@
                 <LinearLayout
                     android:layout_width="0px"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_vertical"
                     android:baselineAligned="false"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -266,11 +266,21 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_vertical"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:textAlignment="center">
 
+                    <TextView
+                        android:id="@+id/iobView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="--U"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/iob_text"
@@ -282,17 +292,6 @@
                         android:textAlignment="center"
                         android:textColor="#FFFFFF"
                         android:textSize="10sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/iobView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="--U"
-                        android:textColor="#FFFFFF"
-                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -315,14 +314,14 @@
 
                     <TextView
                         android:id="@+id/day"
-                        android:layout_width="23dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="day"
                         android:textAlignment="center"
                         android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:id="@+id/month"
@@ -350,7 +349,7 @@
                 <LinearLayout
                     android:layout_width="0px"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal" />
 
             </LinearLayout>
